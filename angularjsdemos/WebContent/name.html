@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="namecontoller.js"></script>
+
+<title>view</title>
+</head>
+<body ng-app="app">
+<div ng-controller="NameCtrl">
+
+Enter Firstname:<input type="text" ng-model="firstname"><br>
+Enter Lastname:<input type="text" ng-model="lastname"><br>
+<h1>{{firstname}}&nbsp;{{lastname}}<h1></h1><br><br>
+
+Enter Firstname:<input type="text" ng-model="firstn"><br>
+Enter Lastname:<input type="text" ng-model="lastn"><br>
+<h2>Welcome {{firstn}}&nbsp;{{lastn}}<h2></h2></b>
+<button ng-click="updateNames()">Update Names</button>
+</div>
+
+</body>
+</html>

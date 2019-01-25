@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="bookcontroller.js"></script>
+<title>Insert title here</title>
+</head>
+
+<body ng-app="app">
+<div ng-controller="BookCtrl">
+{{book}}<br>
+<b>ISBN:</b>{{book.isbn}}<br>
+<b>TITLE:</b>{{book.title}}<br>
+
+<b>AUTHOR:</b>{{book.author}}<br>
+
+<b>PRICE:</b>{{book.price}}
+
+
+</div>
+
+</body>
+</html>

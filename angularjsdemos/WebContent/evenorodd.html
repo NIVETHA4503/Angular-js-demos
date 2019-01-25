@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="evenoroddcontroller.js"></script>
+<title>Insert title here</title>
+<body ng-app="app">
+<div ng-controller="EvenOrOddCtrl">
+Enter some number:<input type="number" ng-model="num"><br>
+<button ng-click="evenOrOdd()">Find even or odd</button><br>
+<b>The entered number {{num}} is {{result}}</b>
+</div>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="bookcontroller.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="app">
+<div ng-controller="BookCtrl">
+<b>Search Here</b><input type="text" ng-model="searchTxt"><br>
+<table>
+<tbody>
+<thead>
+<tr>
+<th>ISBN</th>
+<th>TITLE</th>
+<th>AUTHOR</th>
+<th>PRICE</th>
+</tr>
+</thead>
+</tbody>
+<tr ng-repeat= " b in books  | filter:searchTxt">
+
+ 
+
+<td>{{b.isbn}}</td>
+<td>{{b.title}}</td>
+<td>{{b.author}}</td>
+<td>{{b.price}}</td>
+</tr>
+
+
+</table><table>
+<tbody>
+<thead>
+<tr>
+<th>ISBN</th>
+<th>TITLE</th>
+<th>AUTHOR</th>
+<th>PRICE</th>
+</tr>
+</thead>
+</tbody>
+<tr ng-repeat= " b in books  | filter:searchTxt|orderBy:'price'">
+
+ 
+
+<td>{{b.isbn}}</td>
+<td>{{b.title}}</td>
+<td>{{b.author}}</td>
+<td>{{b.price}}</td>
+</tr>
+
+
+</table>
+<table>
+<tbody>
+<thead>
+<tr>
+<th>ISBN</th>
+<th>TITLE</th>
+<th>AUTHOR</th>
+<th>PRICE</th>
+</tr>
+</thead>
+</tbody>
+<tr ng-repeat= " b in books  | filter:searchTxt|orderBy:'-price'">
+
+ 
+
+<td>{{b.isbn}}</td>
+<td>{{b.title}}</td>
+<td>{{b.author}}</td>
+<td>{{b.price}}</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+</body>
+</html>

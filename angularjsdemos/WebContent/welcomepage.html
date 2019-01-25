@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="">
+<pre>
+<b>Hello World</b><br>
+<b>Sum of two numbers {{2+7}}</b><br>
+<b>Enter the number 1:</b><input type="number" ng-model="num1"><br>
+<b>Enter the number 2:</b><input type="number" ng-model="num2"><br>
+<b>The sum of the two numbers: {{num1+num2}}</b><br>
+<!-- Welcome message is diplayed always -->
+<b>Enter the name:</b><input type="text" ng-model="name"><br>
+<b>Welcome {{name}}</b><br><br>
+<!-- Hide the welcome message until you enter the name in text box -->
+<b>Enter the name:</b><input type="text" ng-model="name"><br>
+<b ng-show="name!=undefined">Hi Hello Welcome {{name}}</b><br><br>
+<!-- Hide the welcome message until you enter the name in text box -->
+
+
+<b>Enter the name:</b><input type="text" ng-model="name"><br>
+<b ng-hide="name==undefined">Hi Hello Welcome {{name}}</b>
+
+
+</pre>
+
+
+</body>
+</html>
